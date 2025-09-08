@@ -1,0 +1,994 @@
+{
+  "topics": [
+    {
+      "name": "Array",
+      "patterns": [
+        {
+          "name": "Two Pointers",
+          "questions": {
+            "easy": [
+              {
+                "name": "Two Sum",
+                "link": "https://leetcode.com/problems/two-sum/"
+              },
+              {
+                "name": "Remove Duplicates from Sorted Array",
+                "link": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Container With Most Water",
+                "link": "https://leetcode.com/problems/container-with-most-water/"
+              },
+              {
+                "name": "3Sum",
+                "link": "https://leetcode.com/problems/3sum/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Trapping Rain Water",
+                "link": "https://leetcode.com/problems/trapping-rain-water/"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Sliding Window",
+          "questions": {
+            "easy": [
+              {
+                "name": "Maximum Sum Subarray of Size K",
+                "link": "https://practice.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Longest Substring Without Repeating Characters",
+                "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Prefix Sum",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Subarray Sum Equals K",
+                "link": "https://leetcode.com/problems/subarray-sum-equals-k/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Binary Search (on Answers)",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Find Peak Element",
+                "link": "https://leetcode.com/problems/find-peak-element/"
+              },
+              {
+                "name": "Search in Rotated Sorted Array",
+                "link": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Koko Eating Bananas",
+                "link": "https://leetcode.com/problems/koko-eating-bananas/"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Cyclic Sort",
+          "questions": {
+            "easy": [
+              {
+                "name": "Find the Missing Number",
+                "link": "https://leetcode.com/problems/missing-number/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Find All Duplicates in an Array",
+                "link": "https://leetcode.com/problems/find-all-duplicates-in-an-array/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "In-place Array Manipulation",
+          "questions": {
+            "easy": [
+              {
+                "name": "Move Zeroes",
+                "link": "https://leetcode.com/problems/move-zeroes/"
+              },
+              {
+                "name": "Remove Element",
+                "link": "https://leetcode.com/problems/remove-element/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Set Matrix Zeroes",
+                "link": "https://leetcode.com/problems/set-matrix-zeroes/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Merge Intervals",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Merge Intervals",
+                "link": "https://leetcode.com/problems/merge-intervals/"
+              },
+              {
+                "name": "Insert Interval",
+                "link": "https://leetcode.com/problems/insert-interval/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Meeting Rooms",
+                "link": "https://leetcode.com/problems/meeting-rooms-ii/"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Kadane's Algorithm",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Maximum Subarray",
+                "link": "https://leetcode.com/problems/maximum-subarray/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Frequency Counting",
+          "questions": {
+            "easy": [
+              {
+                "name": "Majority Element",
+                "link": "https://leetcode.com/problems/majority-element/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Top K Frequent Elements",
+                "link": "https://leetcode.com/problems/top-k-frequent-elements/"
+              }
+            ],
+            "hard": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "Linked List",
+      "patterns": [
+        {
+          "name": "Two Pointers (Fast & Slow)",
+          "questions": {
+            "easy": [
+              {
+                "name": "Middle of the Linked List",
+                "link": "https://leetcode.com/problems/middle-of-the-linked-list/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Linked List Cycle II",
+                "link": "https://leetcode.com/problems/linked-list-cycle-ii/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Reversing a Linked List",
+          "questions": {
+            "easy": [
+              {
+                "name": "Reverse Linked List",
+                "link": "https://leetcode.com/problems/reverse-linked-list/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Reverse Nodes in k-Group",
+                "link": "https://leetcode.com/problems/reverse-nodes-in-k-group/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Merge Linked Lists",
+          "questions": {
+            "easy": [
+              {
+                "name": "Merge Two Sorted Lists",
+                "link": "https://leetcode.com/problems/merge-two-sorted-lists/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Merge k Sorted Lists",
+                "link": "https://leetcode.com/problems/merge-k-sorted-lists/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Pointer Manipulation & Node Removal",
+          "questions": {
+            "easy": [
+              {
+                "name": "Delete Node in a Linked List",
+                "link": "https://leetcode.com/problems/delete-node-in-a-linked-list/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Remove Nth Node From End of List",
+                "link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+              }
+            ],
+            "hard": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack & Queue",
+      "patterns": [
+        {
+          "name": "Monotonic Stack/Queue",
+          "questions": {
+            "easy": [
+              {
+                "name": "Next Greater Element",
+                "link": "https://leetcode.com/problems/next-greater-element-i/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Daily Temperatures",
+                "link": "https://leetcode.com/problems/daily-temperatures/"
+              },
+              {
+                "name": "Sliding Window Maximum",
+                "link": "https://leetcode.com/problems/sliding-window-maximum/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Using Stack for Parsing & State",
+          "questions": {
+            "easy": [
+              {
+                "name": "Valid Parentheses",
+                "link": "https://leetcode.com/problems/valid-parentheses/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Min Stack",
+                "link": "https://leetcode.com/problems/min-stack/"
+              },
+              {
+                "name": "Evaluate Reverse Polish Notation",
+                "link": "https://leetcode.com/problems/evaluate-reverse-polish-notation/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "BFS (using Queue)",
+          "questions": {
+            "easy": [
+              {
+                "name": "Binary Tree Level Order Traversal",
+                "link": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Number of Islands",
+                "link": "https://leetcode.com/problems/number-of-islands/"
+              }
+            ],
+            "hard": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tree (Binary Tree, BST, N-ary)",
+      "patterns": [
+        {
+          "name": "DFS Traversals",
+          "questions": {
+            "easy": [
+              {
+                "name": "Inorder Traversal",
+                "link": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Validate Binary Search Tree",
+                "link": "https://leetcode.com/problems/validate-binary-search-tree/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "BFS Traversal",
+          "questions": {
+            "easy": [
+              {
+                "name": "Binary Tree Level Order Traversal",
+                "link": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Right Side View",
+                "link": "https://leetcode.com/problems/binary-tree-right-side-view/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Binary Search Tree Property",
+          "questions": {
+            "easy": [
+              {
+                "name": "Search in a BST",
+                "link": "https://leetcode.com/problems/search-in-a-binary-search-tree/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Lowest Common Ancestor of a BST",
+                "link": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Tree Construction",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Construct Binary Tree from Preorder and Inorder Traversal",
+                "link": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Tree Height, Depth & Diameter",
+          "questions": {
+            "easy": [
+              {
+                "name": "Maximum Depth of Binary Tree",
+                "link": "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Diameter of Binary Tree",
+                "link": "https://leetcode.com/problems/diameter-of-binary-tree/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Path Sum Problems",
+          "questions": {
+            "easy": [
+              {
+                "name": "Path Sum",
+                "link": "https://leetcode.com/problems/path-sum/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Path Sum II",
+                "link": "https://leetcode.com/problems/path-sum-ii/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Binary Tree Maximum Path Sum",
+                "link": "https://leetcode.com/problems/binary-tree-maximum-path-sum/"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Graph",
+      "patterns": [
+        {
+          "name": "Graph Traversal",
+          "questions": {
+            "easy": [
+              {
+                "name": "Number of Islands",
+                "link": "https://leetcode.com/problems/number-of-islands/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Clone Graph",
+                "link": "https://leetcode.com/problems/clone-graph/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Word Ladder",
+                "link": "https://leetcode.com/problems/word-ladder/"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Topological Sort",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Course Schedule",
+                "link": "https://leetcode.com/problems/course-schedule/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Alien Dictionary",
+                "link": "https://leetcode.com/problems/alien-dictionary/"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Union-Find (DSU)",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Number of Connected Components",
+                "link": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/"
+              },
+              {
+                "name": "Accounts Merge",
+                "link": "https://leetcode.com/problems/accounts-merge/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Shortest Path",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Network Delay Time",
+                "link": "https://leetcode.com/problems/network-delay-time/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Cheapest Flights Within K Stops",
+                "link": "https://leetcode.com/problems/cheapest-flights-within-k-stops/"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Minimum Spanning Tree",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Min Cost to Connect All Points",
+                "link": "https://leetcode.com/problems/min-cost-to-connect-all-points/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Cycle Detection",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Graph Valid Tree",
+                "link": "https://leetcode.com/problems/graph-valid-tree/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Course Schedule (Directed)",
+                "link": "https://leetcode.com/problems/course-schedule-ii/"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Hash Table",
+      "patterns": [
+        {
+          "name": "Frequency Counting",
+          "questions": {
+            "easy": [
+              {
+                "name": "Two Sum",
+                "link": "https://leetcode.com/problems/two-sum/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Group Anagrams",
+                "link": "https://leetcode.com/problems/group-anagrams/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Checking for Existence/Uniqueness",
+          "questions": {
+            "easy": [
+              {
+                "name": "Contains Duplicate",
+                "link": "https://leetcode.com/problems/contains-duplicate/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "First Missing Positive",
+                "link": "https://leetcode.com/problems/first-missing-positive/"
+              }
+            ],
+            "hard": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "Heap (Priority Queue)",
+      "patterns": [
+        {
+          "name": "Top K Elements",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Kth Largest Element",
+                "link": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Top K Frequent Elements",
+                "link": "https://leetcode.com/problems/top-k-frequent-elements/"
+              }
+            ]
+          }
+        },
+        {
+          "name": "K-way Merge",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Merge k Sorted Lists",
+                "link": "https://leetcode.com/problems/merge-k-sorted-lists/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Find K Pairs with Smallest Sums",
+                "link": "https://leetcode.com/problems/find-k-pairs-with-smallest-sums/"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Scheduling & Greedy",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Task Scheduler",
+                "link": "https://leetcode.com/problems/task-scheduler/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Meeting Rooms II",
+                "link": "https://leetcode.com/problems/meeting-rooms-ii/"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Trie",
+      "patterns": [
+        {
+          "name": "Prefix-based Search",
+          "questions": {
+            "easy": [
+              {
+                "name": "Implement Trie",
+                "link": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Add and Search Word",
+                "link": "https://leetcode.com/problems/add-and-search-word-data-structure-design/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Longest Common Prefix",
+                "link": "https://leetcode.com/problems/longest-common-prefix/"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Word Search (DFS + Trie)",
+          "questions": {
+            "easy": [],
+            "medium": [],
+            "hard": [
+              {
+                "name": "Word Search II",
+                "link": "https://leetcode.com/problems/word-search-ii/"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Backtracking",
+      "patterns": [
+        {
+          "name": "Combinatorial Search",
+          "questions": {
+            "easy": [
+              {
+                "name": "Subsets",
+                "link": "https://leetcode.com/problems/subsets/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Permutations",
+                "link": "https://leetcode.com/problems/permutations/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Combination Sum",
+                "link": "https://leetcode.com/problems/combination-sum/"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Constraint Satisfaction",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "N-Queens",
+                "link": "https://leetcode.com/problems/n-queens/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Sudoku Solver",
+                "link": "https://leetcode.com/problems/sudoku-solver/"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dynamic Programming",
+      "patterns": [
+        {
+          "name": "DP on Strings",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Longest Common Subsequence",
+                "link": "https://leetcode.com/problems/longest-common-subsequence/"
+              },
+              {
+                "name": "Longest Palindromic Substring",
+                "link": "https://leetcode.com/problems/longest-palindromic-substring/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Edit Distance",
+                "link": "https://leetcode.com/problems/edit-distance/"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Knapsack & Subset",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Partition Equal Subset Sum",
+                "link": "https://leetcode.com/problems/partition-equal-subset-sum/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Target Sum",
+                "link": "https://leetcode.com/problems/target-sum/"
+              }
+            ]
+          }
+        },
+        {
+          "name": "DP on Grids",
+          "questions": {
+            "easy": [
+              {
+                "name": "Unique Paths",
+                "link": "https://leetcode.com/problems/unique-paths/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Minimum Path Sum",
+                "link": "https://leetcode.com/problems/minimum-path-sum/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Dungeon Game",
+                "link": "https://leetcode.com/problems/dungeon-game/"
+              }
+            ]
+          }
+        },
+        {
+          "name": "DP on Subsequences",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Longest Increasing Subsequence",
+                "link": "https://leetcode.com/problems/longest-increasing-subsequence/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Game Theory / State DP",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "House Robber",
+                "link": "https://leetcode.com/problems/house-robber/"
+              },
+              {
+                "name": "House Robber II",
+                "link": "https://leetcode.com/problems/house-robber-ii/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Best Time to Buy and Sell Stock IV",
+                "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Greedy",
+      "patterns": [
+        {
+          "name": "Interval Scheduling",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Non-overlapping Intervals",
+                "link": "https://leetcode.com/problems/non-overlapping-intervals/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Activity Selection",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Maximum Length of Pair Chain",
+                "link": "https://leetcode.com/problems/maximum-length-of-pair-chain/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Greedy with Sorting",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Assign Cookies",
+                "link": "https://leetcode.com/problems/assign-cookies/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Minimum Number of Arrows to Burst Balloons",
+                "link": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Math & Bit Manipulation",
+      "patterns": [
+        {
+          "name": "Basic Math Problems",
+          "questions": {
+            "easy": [
+              {
+                "name": "Palindrome Number",
+                "link": "https://leetcode.com/problems/palindrome-number/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Pow(x, n)",
+                "link": "https://leetcode.com/problems/powx-n/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Greatest Common Divisor / LCM",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "GCD of Strings",
+                "link": "https://leetcode.com/problems/greatest-common-divisor-of-strings/"
+              }
+            ],
+            "hard": []
+          }
+        },
+        {
+          "name": "Bitmasking",
+          "questions": {
+            "easy": [
+              {
+                "name": "Single Number",
+                "link": "https://leetcode.com/problems/single-number/"
+              }
+            ],
+            "medium": [
+              {
+                "name": "Counting Bits",
+                "link": "https://leetcode.com/problems/counting-bits/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Maximum AND Sum of Array",
+                "link": "https://leetcode.com/problems/maximum-and-sum-of-array/"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Advanced Data Structures",
+      "patterns": [
+        {
+          "name": "Segment Tree / Fenwick Tree",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "Range Sum Query - Mutable",
+                "link": "https://leetcode.com/problems/range-sum-query-mutable/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "Count of Smaller Numbers After Self",
+                "link": "https://leetcode.com/problems/count-of-smaller-numbers-after-self/"
+              }
+            ]
+          }
+        },
+        {
+          "name": "LRU/LFU Cache",
+          "questions": {
+            "easy": [],
+            "medium": [
+              {
+                "name": "LRU Cache",
+                "link": "https://leetcode.com/problems/lru-cache/"
+              }
+            ],
+            "hard": [
+              {
+                "name": "LFU Cache",
+                "link": "https://leetcode.com/problems/lfu-cache/"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

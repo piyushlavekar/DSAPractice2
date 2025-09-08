@@ -82,3 +82,30 @@
     background-color: rgb(var(--color-progress-bar));
   }
 }
+/* ===== Modern, Aesthetic Scrollbar ===== */
+
+/* For Webkit-based browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px; /* Scrollbar chi aakar kami karun aapan tyala sleek banavto */
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827; /* Track cha background app chya background sarkha thevla ahe (gray-900) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0891b2; /* Thumb (jo part move hoto) la aaplya theme cha cyan color dila ahe */
+  border-radius: 10px; /* Tyala golakar banavla ahe */
+  border: 2px solid #111827; /* Track sarkha disto mhanun thodi border add keli ahe */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #22d3ee; /* Hover kelyavar thoda ajun ujal (brighter) disel */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Firefox sathi scrollbar patal (thin) karaycha */
+  scrollbar-color: #0891b2 #111827; /* Thumb aani Track che color set karayche */
+}

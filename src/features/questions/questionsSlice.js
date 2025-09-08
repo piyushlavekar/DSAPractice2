@@ -42,19 +42,18 @@ const defaultInitialState = {
     selectedTopics: [],
     questionsPerDay: 5,
     dailyQuestions: [],
-    seenToday: [], // CRITICAL: Tracks all questions shown in the current session
+    seenToday: [],
+    planGeneratedTimestamp: null, // --- 1. ADDED THIS PROPERTY FOR BETTER LOGIC ---
   },
   highlightedQuestion: null,
 };
 
-// --- Robust Initial State (Verified) ---
+// --- CHANGE 2: SIMPLIFIED AND CORRECTED INITIAL STATE LOGIC ---
+// This now correctly loads the entire revision plan from localStorage,
+// including the list of daily questions, solving the refresh problem.
 const initialState = {
   ...defaultInitialState,
   ...persistedState,
-  revisionPlan: {
-    ...defaultInitialState.revisionPlan,
-    ...(persistedState ? persistedState.revisionPlan : {}),
-  },
 };
 
 // --- Redux Slice ---
@@ -81,26 +80,21 @@ export const questionsSlice = createSlice({
       state.questionNotes = { ...state.questionNotes, [questionName]: note };
       saveState(state);
     },
-
-      // --- THIS IS THE NEW REDUCER FOR DELETING A NOTE ---
     deleteQuestionNote: (state, action) => {
       const questionName = action.payload;
-      // Create a new copy of the notes object
       const newNotes = { ...state.questionNotes };
-      // Delete the property for the specified question
       delete newNotes[questionName];
-      // Assign the new object back to the state
       state.questionNotes = newNotes;
       saveState(state);
     },
-
-    // --- REBUILT AND CORRECTED REVISION LOGIC ---
     startRevisionPlan: (state, action) => {
       state.revisionPlan.isActive = true;
       state.revisionPlan.selectedTopics = action.payload.topics;
       state.revisionPlan.questionsPerDay = action.payload.questionsPerDay;
       state.revisionPlan.dailyQuestions = [];
-      state.revisionPlan.seenToday = []; // Reset for a fresh start
+      state.revisionPlan.seenToday = [];
+      // --- CHANGE 3: SET THE TIMESTAMP WHEN THE PLAN STARTS ---
+      state.revisionPlan.planGeneratedTimestamp = Date.now(); 
       saveState(state);
     },
     
@@ -129,6 +123,9 @@ export const questionsSlice = createSlice({
       state.revisionPlan.dailyQuestions = nextBatch;
       if (!state.revisionPlan.seenToday) state.revisionPlan.seenToday = [];
       state.revisionPlan.seenToday.push(...nextBatch.map(q => q.name));
+      
+      // --- CHANGE 4: UPDATE THE TIMESTAMP WHENEVER A NEW BATCH IS GENERATED ---
+      state.revisionPlan.planGeneratedTimestamp = Date.now();
       saveState(state);
     },
 
@@ -136,15 +133,13 @@ export const questionsSlice = createSlice({
       state.revisionPlan = defaultInitialState.revisionPlan; // Resets completely
       saveState(state);
     },
-
-    
   },
 });
 
 export const { 
   setSelectedTopic, setHighlightedQuestion, toggleQuestionSolved, 
   toggleQuestionStarred, updateQuestionNote, startRevisionPlan,
-  generateNextRevisionBatch, stopRevisionPlan,deleteQuestionNote,
+  generateNextRevisionBatch, stopRevisionPlan, deleteQuestionNote,
 } = questionsSlice.actions;
 
 export default questionsSlice.reducer;

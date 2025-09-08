@@ -1,10 +1,10 @@
 
-
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setSelectedTopic } from '../features/questions/questionsSlice';
 import ProgressBar from './ProgressBar';
 import { motion } from 'framer-motion';
+import { XMarkIcon } from '@heroicons/react/24/solid'; // --- 1. IMPORT THE ICON ---
 
 const sidebarVariants = {
   open: { x: 0 },
@@ -40,9 +40,17 @@ const Sidebar = ({ closeSidebar }) => {
       transition={{ type: 'tween', ease: 'easeInOut', duration: 0.3 }}
       className="w-80 bg-gray-800 shadow-lg flex flex-col h-full z-20 fixed top-0 left-0 border-r border-gray-700"
     >
+      {/* --- 2. THE HEADER SECTION IS UPDATED HERE --- */}
       <div className="p-4 border-b border-gray-700 flex justify-between items-center flex-shrink-0">
         <h1 className="font-bold text-xl">DSA Topics</h1>
-        {/* The close logic is handled by the hamburger button in App.jsx */}
+        {/* This button will ONLY appear on screens smaller than 768px (the 'md' breakpoint) */}
+        <button 
+          onClick={closeSidebar} 
+          className="p-2 rounded-md hover:bg-gray-700 md:hidden" // `md:hidden` makes it vanish on desktop
+          aria-label="Close sidebar"
+        >
+          <XMarkIcon className="h-6 w-6" />
+        </button>
       </div>
       <nav className="flex-1 overflow-y-auto">
         <ul>

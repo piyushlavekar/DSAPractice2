@@ -1,5 +1,6 @@
 
-import React, { useState, useEffect } from 'react';
+
+import React, { useState, useEffect } from 'react'; // --- HI LINE CORRECT KELI AHE ---
 import { useSelector, useDispatch } from 'react-redux';
 import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
@@ -12,6 +13,8 @@ import { Toaster } from 'react-hot-toast';
 import { AnimatePresence, motion } from 'framer-motion';
 import { generateNextRevisionBatch } from './features/questions/questionsSlice';
 import { useMediaQuery } from 'react-responsive';
+
+import Footer from './components/Footer';
 
 function App() {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
@@ -58,6 +61,7 @@ function App() {
           className="flex-1 flex flex-col min-w-0"
         >
           <header className="bg-gray-800/80 backdrop-blur-sm shadow-md px-4 py-3 flex justify-between items-center z-10 border-b border-gray-700 flex-shrink-0">
+            {/* Header content unchanged */}
             <div className="flex items-center gap-4">
               <button onClick={() => setSidebarOpen(prev => !prev)} className="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500">
                 <Bars3Icon className="h-6 w-6" />
@@ -78,7 +82,9 @@ function App() {
           <main className="flex-1 flex flex-col overflow-y-auto bg-gray-900">
             <ProgressTracker />
             <MainContent />
+            <Footer />
           </main>
+          
         </motion.div>
       </div>
 

@@ -61,11 +61,23 @@ const MainContent = () => {
     }
   }, [highlightedQuestion, dispatch]);
 
-  const handleCheckboxChange = (questionName) => {
+   const handleCheckboxChange = (questionName) => {
+    // 1. प्रश्न टॉगल करण्यापूर्वी त्याची सध्याची स्थिती काय आहे ते तपासा
+    const isCurrentlySolved = !!solvedQuestions[questionName];
+
+    // 2. सध्याच्या स्थितीनुसार वेगळा टोस्ट (toast) दाखवा
+    if (isCurrentlySolved) {
+      // जर तो आधीच सॉल्व्ह असेल, तर तो आता 'unsolved' होईल
+      toast.error(`'${questionName}' marked as unsolved.`);
+    } else {
+      // जर तो सॉल्व्ह नसेल, तर तो आता 'solved' होईल
+      toast.success(`'${questionName}' marked as solved!`);
+    }
+
+    // 3. आता Redux मधील स्टेट अपडेट करा
     dispatch(toggleQuestionSolved(questionName));
-    toast.success(`'${questionName}' status updated!`);
   };
-  
+
   // --- THIS IS THE UPDATED FUNCTION ---
   const handleStarClick = (questionName) => {
     const isCurrentlyStarred = !!starredQuestions[questionName];

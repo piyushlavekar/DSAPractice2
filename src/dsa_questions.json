@@ -285,6 +285,30 @@
               {
                 "name": "Find the Kth max and min element of an array",
                 "link": "https://practice.geeksforgeeks.org/problems/kth-smallest-element/0"
+              },
+              {
+                "name": "Minimum Cost to cut a board into squares",
+                "link": "https://www.geeksforgeeks.org/minimum-cost-cut-board-squares/"
+              },
+              {
+                "name": "Program for Shortest Job First (or SJF) CPU Scheduling",
+                "link": "https://www.geeksforgeeks.org/program-for-shortest-job-first-or-sjf-cpu-scheduling-set-1-non-preemptive/"
+              },
+              {
+                "name": "Program for Least Recently Used (LRU) Page Replacement algorithm",
+                "link": "https://practice.geeksforgeeks.org/problems/page-faults-in-lru/0"
+              },
+              {
+                "name": "Find maximum meetings in one room",
+                "link": "https://www.geeksforgeeks.org/find-maximum-meetings-in-one-room/"
+              },
+              {
+                "name": "Buy Maximum Stocks if i stocks can be bought on i-th day",
+                "link": "https://www.geeksforgeeks.org/buy-maximum-stocks-stocks-can-bought-th-day/"
+              },
+              {
+                "name": "Check if it is possible to survive on Island",
+                "link": "https://www.geeksforgeeks.org/survival/"
               }
             ],
             "medium": [
@@ -303,6 +327,58 @@
               {
                 "name": "Find longest consecutive subsequence",
                 "link": "https://practice.geeksforgeeks.org/problems/longest-consecutive-subsequence/0"
+              },
+              {
+                "name": "Maximum trains for which stoppage can be provided",
+                "link": "https://www.geeksforgeeks.org/maximum-trains-stoppage-can-provided/"
+              },
+              {
+                "name": "Maximum product subset of an array",
+                "link": "https://www.geeksforgeeks.org/maximum-product-subset-array/"
+              },
+              {
+                "name": "Maximize array sum after K negations",
+                "link": "https://practice.geeksforgeeks.org/problems/maximize-sum-after-k-negations/0"
+              },
+              {
+                "name": "Maximize the sum of arr[i]*i",
+                "link": "https://practice.geeksforgeeks.org/problems/maximize-arrii-of-an-array/0"
+              },
+              {
+                "name": "Maximum sum of absolute difference of an array",
+                "link": "https://www.geeksforgeeks.org/maximum-sum-absolute-difference-array/"
+              },
+              {
+                "name": "Maximize sum of consecutive differences in a circular array",
+                "link": "https://practice.geeksforgeeks.org/problems/swap-and-maximize/0"
+              },
+              {
+                "name": "Minimum sum of absolute difference of pairs of two arrays",
+                "link": "https://www.geeksforgeeks.org/minimum-sum-absolute-difference-pairs-two-arrays/"
+              },
+              {
+                "name": "Smallest subset with sum greater than all other elements",
+                "link": "https://www.geeksforgeeks.org/smallest-subset-sum-greater-elements/"
+              },
+              {
+                "name": "GERGOVIA -Wine trading in Gergovia",
+                "link": "https://www.spoj.com/problems/GERGOVIA/"
+              },
+              {
+                "name": "CHOCOLA –Chocolate",
+                "link": "https://www.spoj.com/problems/CHOCOLA/"
+              },
+              {
+                "name": "ARRANGE -Arranging Amplifiers",
+                "link": "https://www.spoj.com/problems/ARRANGE/"
+              },
+              {
+                "name": "Rearrange characters in a string such that no two adjacent are same",
+                "link": "https://practice.geeksforgeeks.org/problems/rearrange-characters/0"
+              },
+              {
+                "name": "Find maximum sum possible equal sum of three stacks",
+                "link": "https://www.geeksforgeeks.org/find-maximum-sum-possible-equal-sum-three-stacks/"
               }
             ],
             "hard": [
@@ -317,6 +393,70 @@
               {
                 "name": "Minimise the maximum difference between heights II",
                 "link": "https://practice.geeksforgeeks.org/problems/minimize-the-heights3351/1"
+              },
+              {
+                "name": "Activity Selection Problem",
+                "link": "https://practice.geeksforgeeks.org/problems/activity-selection-1587115620/1/"
+              },
+              {
+                "name": "Job Sequencing Problem",
+                "link": "https://practice.geeksforgeeks.org/problems/job-sequencing-problem/0"
+              },
+              {
+                "name": "Huffman Coding",
+                "link": "https://practice.geeksforgeeks.org/problems/huffman-encoding/0"
+              },
+              {
+                "name": "Water Connection Problem",
+                "link": "https://practice.geeksforgeeks.org/problems/water-connection-problem/0"
+              },
+              {
+                "name": "Fractional Knapsack Problem",
+                "link": "https://practice.geeksforgeeks.org/problems/fractional-knapsack/0"
+              },
+              {
+                "name": "Greedy Algorithm to find Minimum number of Coins",
+                "link": "https://practice.geeksforgeeks.org/problems/coin-piles/0"
+              },
+              {
+                "name": "Minimum Platforms Problem",
+                "link": "https://practice.geeksforgeeks.org/problems/minimum-platforms/0"
+              },
+              {
+                "name": "Find the minimum and maximum amount to buy all N candies",
+                "link": "https://practice.geeksforgeeks.org/problems/shop-in-candy-store/0"
+              },
+              {
+                "name": "Minimize Cash Flow among a given set of friends who have borrowed money from each other",
+                "link": "https://www.geeksforgeeks.org/minimize-cash-flow-among-given-set-friends-borrowed-money/"
+              },
+              {
+                "name": "Chocolate Distribution Problem",
+                "link": "https://practice.geeksforgeeks.org/problems/chocolate-distribution-problem/0"
+              },
+              {
+                "name": "DEFKIN -Defense of a Kingdom",
+                "link": "https://www.spoj.com/problems/DEFKIN/"
+              },
+              {
+                "name": "DIEHARD -DIE HARD",
+                "link": "https://www.spoj.com/problems/DIEHARD/"
+              },
+              {
+                "name": "Picking Up Chicks",
+                "link": "https://www.spoj.com/problems/GCJ101BB/"
+              },
+              {
+                "name": "K Centers Problem",
+                "link": "https://www.geeksforgeeks.org/k-centers-problem-set-1-greedy-approximate-algorithm/"
+              },
+              {
+                "name": "Minimum Cost of ropes",
+                "link": "https://practice.geeksforgeeks.org/problems/minimum-cost-of-ropes/0"
+              },
+              {
+                "name": "Find smallest number with given number of digits and sum of digits",
+                "link": "https://practice.geeksforgeeks.org/problems/smallest-number5829/1"
               }
             ]
           }
@@ -376,9 +516,6 @@
         }
       ]
     },
-
-
-
     {
       "name": "Strings",
       "patterns": [

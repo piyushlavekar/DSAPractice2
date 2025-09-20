@@ -105,7 +105,7 @@ const ProgressTracker = () => {
             {overallProgress.percentage}%
           </span>
         </div>
-        <p className="text-sm text-slate-400 mb-4">{overallProgress.totalSolved} of {overallProgress.totalQuestions} questions solved</p>
+        <p className="text-sm text-slate-400 mb-4">{overallProgress.totalSolved} / {overallProgress.totalQuestions} Problems Solved</p>
         <div className="w-full bg-slate-700 rounded-full h-3 overflow-hidden">
           <div 
             className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 h-3 rounded-full transition-all duration-500 ease-out" 
@@ -123,7 +123,7 @@ const ProgressTracker = () => {
               {topicProgress.percentage}%
             </span>
           </div>
-          <p className="text-sm text-slate-400 mb-4">{topicProgress.solvedCount} of {topicProgress.totalQuestions} questions solved</p>
+          <p className="text-sm text-slate-400 mb-4">{topicProgress.solvedCount} / {topicProgress.totalQuestions} Problems Solved</p>
           <div className="w-full bg-slate-700 rounded-full h-3 overflow-hidden">
             <div 
               className="bg-gradient-to-r from-teal-400 to-cyan-600 h-3 rounded-full transition-all duration-500 ease-out" 

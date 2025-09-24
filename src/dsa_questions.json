@@ -18,6 +18,10 @@
               {
                 "name": "Find common elements in 3 sorted arrays",
                 "link": "https://practice.geeksforgeeks.org/problems/common-elements1132/1"
+              },
+              {
+                "name":"Move all negative elements to end",
+                "link":"https://www.geeksforgeeks.org/problems/move-all-negative-elements-to-end1813/1"
               }
             ],
             "medium": [
@@ -494,6 +498,10 @@
               {
                 "name": "Set kth bit",
                 "link": "https://www.geeksforgeeks.org/problems/set-kth-bit3724/1"
+              },
+              {
+                "name":"Union of Arrays with Duplicates",
+                "link":"https://www.geeksforgeeks.org/problems/union-of-two-arrays3538/1"
               }
             ],
             "medium": [

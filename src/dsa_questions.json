@@ -2256,6 +2256,10 @@
               {
                 "name": "Find the K-th Permutation Sequence of first N natural numbers",
                 "link": "https://www.geeksforgeeks.org/problems/find-kth-permutation-0932/1"
+              },
+              {
+                "name":"Letter Combination Of A Phone Number",
+                "link":"https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/"
               }
             ],
             "hard": [

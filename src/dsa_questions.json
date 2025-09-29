@@ -20,8 +20,8 @@
                 "link": "https://practice.geeksforgeeks.org/problems/common-elements1132/1"
               },
               {
-                "name":"Move all negative elements to end",
-                "link":"https://www.geeksforgeeks.org/problems/move-all-negative-elements-to-end1813/1"
+                "name": "Move all negative elements to end",
+                "link": "https://www.geeksforgeeks.org/problems/move-all-negative-elements-to-end1813/1"
               }
             ],
             "medium": [
@@ -500,8 +500,8 @@
                 "link": "https://www.geeksforgeeks.org/problems/set-kth-bit3724/1"
               },
               {
-                "name":"Union of Arrays with Duplicates",
-                "link":"https://www.geeksforgeeks.org/problems/union-of-two-arrays3538/1"
+                "name": "Union of Arrays with Duplicates",
+                "link": "https://www.geeksforgeeks.org/problems/union-of-two-arrays3538/1"
               }
             ],
             "medium": [
@@ -2289,7 +2289,12 @@
                 "link": "https://leetcode.com/problems/remove-invalid-parentheses/"
               }
             ],
-            "hard": []
+            "hard": [
+              {
+                "name": "Generating Parentheses",
+                "link": "https://leetcode.com/problems/generate-parentheses/description/"
+              }
+            ]
           }
         }
       ]

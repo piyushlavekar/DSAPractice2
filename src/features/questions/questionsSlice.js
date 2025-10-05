@@ -1,15 +1,15 @@
-
-
-import { createSlice } from '@reduxjs/toolkit';
-import dsaQuestions from '../../dsa_questions.json';
+import { createSlice } from "@reduxjs/toolkit";
+import dsaQuestions from "../../dsa_questions.json";
 
 // --- State Persistence Functions (Verified) ---
 const loadState = () => {
   try {
-    const serializedState = localStorage.getItem('dsaTrackerState');
+    const serializedState = localStorage.getItem("dsaTrackerState");
     if (serializedState === null) return undefined;
     return JSON.parse(serializedState);
-  } catch (err) { return undefined; }
+  } catch (err) {
+    return undefined;
+  }
 };
 
 const saveState = (state) => {
@@ -23,8 +23,10 @@ const saveState = (state) => {
       revisionPlan: state.revisionPlan,
     };
     const serializedState = JSON.stringify(stateToSave);
-    localStorage.setItem('dsaTrackerState', serializedState);
-  } catch (err) { /* ignore */ }
+    localStorage.setItem("dsaTrackerState", serializedState);
+  } catch (err) {
+    /* ignore */
+  }
 };
 
 const persistedState = loadState();
@@ -58,21 +60,35 @@ const initialState = {
 
 // --- Redux Slice ---
 export const questionsSlice = createSlice({
-  name: 'questions',
+  name: "questions",
   initialState,
   reducers: {
-    setSelectedTopic: (state, action) => { state.selectedTopic = action.payload; saveState(state); },
-    setHighlightedQuestion: (state, action) => { state.highlightedQuestion = action.payload; },
+    setSelectedTopic: (state, action) => {
+      state.selectedTopic = action.payload;
+      saveState(state);
+    },
+    setHighlightedQuestion: (state, action) => {
+      state.highlightedQuestion = action.payload;
+    },
     toggleQuestionSolved: (state, action) => {
       const questionName = action.payload;
-      state.solvedQuestions = { ...state.solvedQuestions, [questionName]: !state.solvedQuestions[questionName] };
-      if (state.solvedQuestions[questionName]) { state.solveDates[questionName] = Date.now(); } 
-      else { delete state.solveDates[questionName]; }
+      state.solvedQuestions = {
+        ...state.solvedQuestions,
+        [questionName]: !state.solvedQuestions[questionName],
+      };
+      if (state.solvedQuestions[questionName]) {
+        state.solveDates[questionName] = Date.now();
+      } else {
+        delete state.solveDates[questionName];
+      }
       saveState(state);
     },
     toggleQuestionStarred: (state, action) => {
       const questionName = action.payload;
-      state.starredQuestions = { ...state.starredQuestions, [questionName]: !state.starredQuestions[questionName] };
+      state.starredQuestions = {
+        ...state.starredQuestions,
+        [questionName]: !state.starredQuestions[questionName],
+      };
       saveState(state);
     },
     updateQuestionNote: (state, action) => {
@@ -94,16 +110,28 @@ export const questionsSlice = createSlice({
       state.revisionPlan.dailyQuestions = [];
       state.revisionPlan.seenToday = [];
       // --- CHANGE 3: SET THE TIMESTAMP WHEN THE PLAN STARTS ---
-      state.revisionPlan.planGeneratedTimestamp = Date.now(); 
+      state.revisionPlan.planGeneratedTimestamp = Date.now();
       saveState(state);
     },
-    
+
     generateNextRevisionBatch: (state) => {
       if (!state.revisionPlan.isActive) return;
 
       const allQuestionsMap = new Map();
-      state.topics.forEach(t => t.patterns.forEach(p => Object.values(p.questions).forEach(qL => qL.forEach(q => allQuestionsMap.set(q.name, { ...q, pattern: p.name, topic: t.name })))));
-      
+      state.topics.forEach((t) =>
+        t.patterns.forEach((p) =>
+          Object.values(p.questions).forEach((qL) =>
+            qL.forEach((q) =>
+              allQuestionsMap.set(q.name, {
+                ...q,
+                pattern: p.name,
+                topic: t.name,
+              })
+            )
+          )
+        )
+      );
+
       const revisionPool = [];
       const selectedTopicsSet = new Set(state.revisionPlan.selectedTopics);
       const seenTodaySet = new Set(state.revisionPlan.seenToday || []);
@@ -111,19 +139,29 @@ export const questionsSlice = createSlice({
       for (const questionName in state.solvedQuestions) {
         if (state.solvedQuestions[questionName]) {
           const details = allQuestionsMap.get(questionName);
-          if (details && selectedTopicsSet.has(details.topic) && !seenTodaySet.has(questionName)) {
-            revisionPool.push({ name: questionName, solveDate: state.solveDates[questionName] || 0 });
+          if (
+            details &&
+            selectedTopicsSet.has(details.topic) &&
+            !seenTodaySet.has(questionName)
+          ) {
+            revisionPool.push({
+              name: questionName,
+              solveDate: state.solveDates[questionName] || 0,
+            });
           }
         }
       }
-      
+
       revisionPool.sort((a, b) => a.solveDate - b.solveDate);
-      const nextBatch = revisionPool.slice(0, state.revisionPlan.questionsPerDay);
-      
+      const nextBatch = revisionPool.slice(
+        0,
+        state.revisionPlan.questionsPerDay
+      );
+
       state.revisionPlan.dailyQuestions = nextBatch;
       if (!state.revisionPlan.seenToday) state.revisionPlan.seenToday = [];
-      state.revisionPlan.seenToday.push(...nextBatch.map(q => q.name));
-      
+      state.revisionPlan.seenToday.push(...nextBatch.map((q) => q.name));
+
       // --- CHANGE 4: UPDATE THE TIMESTAMP WHENEVER A NEW BATCH IS GENERATED ---
       state.revisionPlan.planGeneratedTimestamp = Date.now();
       saveState(state);
@@ -136,10 +174,16 @@ export const questionsSlice = createSlice({
   },
 });
 
-export const { 
-  setSelectedTopic, setHighlightedQuestion, toggleQuestionSolved, 
-  toggleQuestionStarred, updateQuestionNote, startRevisionPlan,
-  generateNextRevisionBatch, stopRevisionPlan, deleteQuestionNote,
+export const {
+  setSelectedTopic,
+  setHighlightedQuestion,
+  toggleQuestionSolved,
+  toggleQuestionStarred,
+  updateQuestionNote,
+  startRevisionPlan,
+  generateNextRevisionBatch,
+  stopRevisionPlan,
+  deleteQuestionNote,
 } = questionsSlice.actions;
 
 export default questionsSlice.reducer;

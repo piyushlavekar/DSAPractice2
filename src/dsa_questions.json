@@ -1329,6 +1329,10 @@
               {
                 "name": "Implement Queue from Scratch",
                 "link": "https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/"
+              },
+              {
+                "name":"Simplify Path",
+                "link":"https://leetcode.com/problems/simplify-path/"
               }
             ]
           }

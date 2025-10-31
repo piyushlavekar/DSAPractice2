@@ -321,6 +321,10 @@
                 "link": "https://www.geeksforgeeks.org/problems/minimize-the-heights-i/1"
               },
               {
+                "name":"Gas stations",
+                "link":"https://leetcode.com/problems/gas-station/description/"
+              },
+              {
                 "name": "Maximum profit by buying and selling a share atmost twice",
                 "link": "https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/"
               },
@@ -2254,6 +2258,10 @@
               {
                 "name": "Print all permutations of a string",
                 "link": "https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string/0"
+              },
+              {
+                "name":"beautiful arrangement",
+                "link":"https://leetcode.com/problems/beautiful-arrangement/description/"
               }
             ],
             "medium": [
